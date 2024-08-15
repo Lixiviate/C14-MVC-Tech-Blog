@@ -14,7 +14,7 @@ This project is a tech blog built using the MVC paradigm. It utilizes Sequelize 
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Set up your PostgreSQL database and update `.env` file
+3. Set up your PostgreSQL database by using the `schema.sql` and update `.env` file
 4. Run seeds: `npm run seed`
 5. Start the server: `npm start`
 6. Visit `http://localhost:3001` in your browser
