@@ -52,4 +52,21 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// POST create a new user (signup)
+router.post('/signup', async (req, res) => {
+  try {
+    const userData = await User.create(req.body);
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.loggedIn = true;
+      res.status(200).json({
+        user: userData,
+        message: 'You have signed up and are now logged in!',
+      });
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 module.exports = router;
