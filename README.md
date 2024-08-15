@@ -6,10 +6,18 @@ This project is a tech blog built using the MVC paradigm. It utilizes Sequelize 
 
 ## Features
 
-- User authentication and authorization
+- User authentication (signup, login, logout)
+- Create, read, update, and delete blog posts
+- Comment on blog posts
 
 ## Usage
 
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up your PostgreSQL database and update `.env` file
+4. Run seeds: `npm run seed`
+5. Start the server: `npm start`
+6. Visit `http://localhost:3001` in your browser
 
 ## Example(s)
 
