@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a,
+nav button {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.page-title {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.post-actions {
+  margin-top: 10px;
+}
+
+.post-actions button {
+  margin-right: 10px;
+}
