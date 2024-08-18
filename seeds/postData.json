@@ -1,14 +1,17 @@
 [
   {
     "title": "iPhone 15 Pro",
-    "content": "Apple's latest iPhone packs a punch. But is it worth the upgrade?"
+    "content": "Apple's latest iPhone packs a punch. But is it worth the upgrade?",
+    "post_id": 1
   },
   {
     "title": "Nanotech Breakthrough",
-    "content": "Scientists develop tiny robots that repair cells. Is this a fountain of youth?"
+    "content": "Scientists develop tiny robots that repair cells. Is this a fountain of youth?",
+    "post_id": 2
   },
   {
     "title": "AWS New Development",
-    "content": "Amazon Web Services now offers quantum computing."
+    "content": "Amazon Web Services now offers quantum computing.",
+    "post_id": 3
   }
 ]

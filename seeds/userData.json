@@ -1,14 +1,17 @@
 [
   {
     "username": "techfan1",
-    "password": "pass12345"
+    "password": "pass12345",
+    "user_id": 1
   },
   {
     "username": "gadgetsguru",
-    "password": "apple4567"
+    "password": "apple4567",
+    "user_id": 2
   },
   {
     "username": "cloudexpert",
-    "password": "aws891011"
+    "password": "aws891011",
+    "user_id": 3
   }
 ]

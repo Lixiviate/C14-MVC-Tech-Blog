@@ -1,11 +1,17 @@
 [
   {
-    "content": "Can't wait to get my hands on the new iPhone!"
+    "comment_text": "Can't wait to get my hands on the new iPhone!",
+    "user_id": 1,
+    "post_id": 1
   },
   {
-    "content": "Nanotech sounds cool. What about the long-term effects??"
+    "comment_text": "Nanotech sounds cool. What about the long-term effects??",
+    "user_id": 2,
+    "post_id": 2
   },
   {
-    "content": "Quantum computing on AWS? The future is here!"
+    "comment_text": "Quantum computing on AWS? The future is here!",
+    "user_id": 3,
+    "post_id": 3
   }
 ]
