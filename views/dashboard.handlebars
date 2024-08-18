@@ -1,11 +1,27 @@
-<h2>Your Dashboard</h2>
-{{#each userPosts}}
-  <div class='post'>
-    <h3>{{title}}</h3>
-    <p>{{content}}</p>
-    <button class='edit-post' data-id='{{id}}'>Edit</button>
-    <button class='delete-post' data-id='{{id}}'>Delete</button>
-  </div>
-{{/each}}
-<button id='new-post'>Create New Post</button>
+<h2 class='page-title'>Your Dashboard</h2>
+<div class='post-list'>
+  {{#each posts}}
+    <article class='post' data-id='{{id}}'>
+      <h3>{{title}}</h3>
+      <p>{{content}}</p>
+      <div class='post-actions'>
+        <button class='btn edit-post' data-id='{{id}}'>Edit</button>
+        <button class='btn delete-post' data-id='{{id}}'>Delete</button>
+      </div>
+      <form class='edit-form' style='display: none;'>
+        <input type='text' class='edit-title' value='{{title}}' />
+        <textarea class='edit-content'>{{content}}</textarea>
+        <button type='submit' class='btn update-post'>Update Post</button>
+        <button type='button' class='btn cancel-edit'>Cancel</button>
+      </form>
+    </article>
+  {{/each}}
+</div>
+
+<form class='new-post-form'>
+  <input type='text' id='post-title' placeholder='Post Title' />
+  <textarea id='post-content' placeholder='Post Content'></textarea>
+  <button type='submit' class='btn' id='new-post'>Create New Post</button>
+</form>
+
 <script src='/js/dashboard.js'></script>
