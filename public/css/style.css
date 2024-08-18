@@ -1,73 +1,122 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --accent-color: #e74c3c;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  max-width: 800px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
 header {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-color);
   padding: 1rem;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav a,
 nav button {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .page-title {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
 }
 
 .post {
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
 }
 
 .post-meta {
   font-size: 0.9em;
   color: #666;
+  margin-bottom: 10px;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
 }
 
 .btn {
-  background-color: #333;
+  background-color: var(--primary-color);
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #444;
+  background-color: #2980b9;
 }
 
 .post-actions {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .post-actions button {
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .post {
+    padding: 15px;
+  }
 }
