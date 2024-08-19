@@ -23,11 +23,14 @@ This project is a tech blog built using the MVC paradigm. It utilizes Sequelize 
 
 [Demo Video]()
 
-![Example]()
+![Example](./images/Example1.png)
 
-![Example]()
+![Example](./images/Example2.png)
 
-![Example]()
+![Example](./images/Example3.png)
+
+![Example](./images/Example4.png)
+
 
 ## Source Code
 
