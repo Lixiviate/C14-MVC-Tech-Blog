@@ -54,10 +54,9 @@ router.post('/logout', withAuth, (req, res) => {
 // Signup http://localhost:3001/api/users/signup Body: { "username": "newuser", "password": "password123" }
 router.post('/signup', async (req, res) => {
   try {
-    const hashedPassword = await bcrypt.hash(req.body.password, 10);
     const userData = await User.create({
       username: req.body.username,
-      password: hashedPassword,
+      password: req.body.password,
     });
 
     req.session.save(() => {
