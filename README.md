@@ -13,7 +13,7 @@ This project is a tech blog built using the MVC paradigm. It utilizes Sequelize 
 ## Usage
 
 ### Live Deployment
-1. Open the application via this [Link to the application](https://c11-express-js-note-taker.onrender.com/).
+1. Open the application via this [Link to the application](https://c14-mvc-tech-blog.onrender.com).
 2. Create an account or log in to an existing account.
 3. Create, read, update, and delete blog posts.
 4. Comment on blog posts.
