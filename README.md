@@ -12,6 +12,14 @@ This project is a tech blog built using the MVC paradigm. It utilizes Sequelize 
 
 ## Usage
 
+### Live Deployment
+1. Open the application via this [Link to the application](https://c11-express-js-note-taker.onrender.com/).
+2. Create an account or log in to an existing account.
+3. Create, read, update, and delete blog posts.
+4. Comment on blog posts.
+5. Explore the application and enjoy!
+
+### Local Development
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Set up your PostgreSQL database by using the `schema.sql` and update `.env` file
